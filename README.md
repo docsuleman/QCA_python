@@ -3,6 +3,8 @@ Quantitative Angiography in python to detect stenosis and guide in stent sizing
 
 Skimage seems to better than openCV in angiographies edge detection.
 
+![Screenshot](/images/screenshot.png)
+
 
 ## TODO
 * GUI
@@ -11,3 +13,5 @@ Skimage seems to better than openCV in angiographies edge detection.
 * Validation
 * Quantification
 * DICOM support
+
+[Developed by DocSuleman](http://docsuleman.com)
