@@ -18,17 +18,19 @@ edges_image = feature.canny(image,sigma=3,low_threshold=0.7,high_threshold=.99,u
 #ridge_image = hessian(image,black_ridges=True,mode='reflect',sigmas=[7])
 
 
-fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(8, 3))
-
+fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(8, 3))
 ax[0].imshow(image, cmap='gray')
-ax[0].set_title('noisy image', fontsize=20)
+ax[0].set_title('Original', fontsize=20)
 
-# ax[1].imshow(ridge_image, cmap='gray')
-# ax[1].set_title(r'Ridge filter', fontsize=20)
+ax[1].imshow(image, cmap='gray')
+ax[1].set_title('Overlay', fontsize=20)
+
+ax[1].imshow(edges_image, cmap='gray',alpha=0.5)
+
+ax[2].imshow(edges_image, cmap='gray')
+ax[2].set_title(r'Edge Only', fontsize=20)
 
 
-ax[0].imshow(edges_image, cmap='gray',alpha=0.5)
-ax[0].set_title(r'Final Canny, $\sigma=3$', fontsize=20)
 
 for a in ax:
     a.axis('off')
