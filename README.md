@@ -1,4 +1,4 @@
-# QCA_python
+# QCA in Python
 Quantitative Angiography in python to detect stenosis and guide in stent sizing
 
 Skimage seems to better than openCV in angiographies edge detection.
