@@ -5,6 +5,7 @@
       <mapping pattern="employe.py" type="PLAIN_TEXT" />
       <mapping pattern="employe" type="Python" />
       <mapping pattern="scikit" type="Python" />
+      <mapping pattern="3DITK" type="Python" />
     </extensionMap>
   </component>
 </application>
